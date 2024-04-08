@@ -82,7 +82,26 @@
         "ProjectId": "70029465-c5f7-49dd-9c43-7207bb9addc2",
         "ProjectName": "MSSQL_SB",
         "DBTypeName": "SQL Server",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "d8f5ca46-a9c0-4788-9574-a327aa1f6a4a",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "a69b9eaa-15ca-4257-9385-1f9a5fa4c018",
+                "DatabaseAliasName": "MSSQL_DB",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/dbmscuser/dbm_sc_vdot_mssql_sb1.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -105,7 +124,30 @@
       "UserData": [
         {
           "UserName": "dbmscuser",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "a69b9eaa-15ca-4257-9385-1f9a5fa4c018",
+              "DatabaseAliasName": "MSSQL_DB",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "SQL Server",
+                    "host": "localhost",
+                    "authType": "SqlAuthentication",
+                    "userName": "sa",
+                    "dbName": "DBM_SC_VDOT_SB",
+                    "Password": "do1NBD0OcmAl1jAcpH7iWg=="
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "dbmscuser",
+                "Password": "nd0Onep/YMNAOVnAZs/dYK1O9JmNJxaJ1TeBtYfeYJ9rh8pMFasXYPLAnB8baklE"
+              }
+            }
+          ]
         }
       ],
       "DatabasesStaticDataObjects": null,
