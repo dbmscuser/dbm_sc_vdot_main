@@ -5,7 +5,26 @@
         "ProjectId": "164fff3a-5ed6-4ca3-9c7c-9ad8fb37cda4",
         "ProjectName": "ORACLE_SB",
         "DBTypeName": "Oracle",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "c1f304ff-ff8f-4154-ba5f-b91a857a6137",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "ed0ae0f4-42fd-402d-8ed2-8fcc0d613a54",
+                "DatabaseAliasName": "ORACLE_DB",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/dbmscuser/dbm_sc_vdot_oracle_sb1.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -28,7 +47,31 @@
       "UserData": [
         {
           "UserName": "dbmscuser",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "ed0ae0f4-42fd-402d-8ed2-8fcc0d613a54",
+              "DatabaseAliasName": "ORACLE_DB",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "Oracle",
+                    "host": "localhost",
+                    "port": "1522",
+                    "identifierType": "SERVICE_NAME",
+                    "identifier": "orclpdb.us-central1-a.c.dbmaestro-dev.internal",
+                    "userName": "DBM_VDOT_ORACLE",
+                    "Password": "do1NBD0OcmAl1jAcpH7iWg=="
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "dbmscuser",
+                "Password": "nd0Onep/YMNAOVnAZs/dYK1O9JmNJxaJ1TeBtYfeYJ9rh8pMFasXYPLAnB8baklE"
+              }
+            }
+          ]
         }
       ],
       "DatabasesStaticDataObjects": null,
