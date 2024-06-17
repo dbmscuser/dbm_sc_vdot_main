@@ -246,7 +246,26 @@
         "ProjectId": "48d986c8-53ad-41b3-a5fe-6ae5f141f9a1",
         "ProjectName": "VDOT_TEST",
         "DBTypeName": "SQL Server",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "d625add9-d3c3-4027-a828-72c6d4864b6a",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "f3e3df24-48cd-4a94-a3f8-6aad877fb4c0",
+                "DatabaseAliasName": "VDOT_TEST_DB",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/dbmscuser/VDOT_TEST.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -269,7 +288,29 @@
       "UserData": [
         {
           "UserName": "dbmscuser",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "f3e3df24-48cd-4a94-a3f8-6aad877fb4c0",
+              "DatabaseAliasName": "VDOT_TEST_DB",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "SQL Server",
+                    "host": "dopx-berke",
+                    "authType": "WindowsAuthentication",
+                    "dbName": "VDOT_TEST",
+                    "Password": null
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "dbmscuser",
+                "Password": "nd0Onep/YMNAOVnAZs/dYK1O9JmNJxaJ1TeBtYfeYJ9rh8pMFasXYPLAnB8baklE"
+              }
+            }
+          ]
         }
       ],
       "DatabasesStaticDataObjects": null,
