@@ -238,7 +238,20 @@
           ]
         }
       ],
-      "DatabasesStaticDataObjects": null,
+      "DatabasesStaticDataObjects": [
+        {
+          "StaticDataObjects": [
+            {
+              "UniqueIndex": "pk_table_1_col1",
+              "schema": "dbo",
+              "name": "Table_2",
+              "type": "Table"
+            }
+          ],
+          "DatabaseId": "1ad84b3d-3036-4288-a3bb-611be2ff3d42",
+          "DatabaseAliasName": "MSSQL_DB"
+        }
+      ],
       "DatabasesScopeObjects": null
     },
     {
