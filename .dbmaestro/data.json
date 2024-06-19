@@ -334,7 +334,26 @@
         "ProjectId": "2d91aeba-8a0b-4a4e-b8b5-cd8328699f51",
         "ProjectName": "TEST_MSSQL",
         "DBTypeName": "SQL Server",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "a8a8579f-163b-4bcc-beec-fd3d5945809a",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "ec85f2bd-82e9-430a-9fa2-ad2c9daad3ae",
+                "DatabaseAliasName": "TEST",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/dbmscuser/ISRAEL_TEST.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -357,7 +376,42 @@
       "UserData": [
         {
           "UserName": "dbmscuser",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "ec85f2bd-82e9-430a-9fa2-ad2c9daad3ae",
+              "DatabaseAliasName": "TEST",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": null,
+              "RepositoryCredentials": {
+                "UserName": "dbmscuser",
+                "Password": "nd0Onep/YMNAOVnAZs/dYK1O9JmNJxaJ1TeBtYfeYJ9rh8pMFasXYPLAnB8baklE"
+              }
+            }
+          ]
+        },
+        {
+          "UserName": "#ALL",
+          "DatabasesData": [
+            {
+              "DatabaseId": "ec85f2bd-82e9-430a-9fa2-ad2c9daad3ae",
+              "DatabaseAliasName": "TEST",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "SQL Server",
+                    "host": "dopx-berke",
+                    "authType": "SqlAuthentication",
+                    "userName": "sa",
+                    "dbName": "TestDB",
+                    "Password": "do1NBD0OcmAl1jAcpH7iWg=="
+                  }
+                }
+              ],
+              "RepositoryCredentials": null
+            }
+          ]
         }
       ],
       "DatabasesStaticDataObjects": null,
