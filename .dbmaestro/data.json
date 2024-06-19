@@ -412,6 +412,21 @@
               "RepositoryCredentials": null
             }
           ]
+        },
+        {
+          "UserName": "berkeoz",
+          "DatabasesData": [
+            {
+              "DatabaseId": "ec85f2bd-82e9-430a-9fa2-ad2c9daad3ae",
+              "DatabaseAliasName": "TEST",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": null,
+              "RepositoryCredentials": {
+                "UserName": "berkeoz",
+                "Password": "JqGsVo2QQMTiGL77oowIVBMC0lhG823J78P+QPrSzuA="
+              }
+            }
+          ]
         }
       ],
       "DatabasesStaticDataObjects": null,
