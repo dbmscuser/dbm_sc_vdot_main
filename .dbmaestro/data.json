@@ -450,7 +450,26 @@
         "ProjectId": "e21824a6-221a-4139-b5d5-3e081dc95b8a",
         "ProjectName": "VDOT_DEV",
         "DBTypeName": "SQL Server",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "73204c65-8152-4f1d-8c35-2c9906a947eb",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "bcc2144d-43f2-4773-9e4e-dd1ace137f6a",
+                "DatabaseAliasName": "VDOT_DEV",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/dbmscuser/VDOT_DEV.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -473,7 +492,30 @@
       "UserData": [
         {
           "UserName": "dbmscuser",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "bcc2144d-43f2-4773-9e4e-dd1ace137f6a",
+              "DatabaseAliasName": "VDOT_DEV",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "SQL Server",
+                    "host": "dopx-berke",
+                    "authType": "SqlAuthentication",
+                    "userName": "sa",
+                    "dbName": "VDOT_DEV",
+                    "Password": "do1NBD0OcmAl1jAcpH7iWg=="
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "dbmscuser",
+                "Password": "nd0Onep/YMNAOVnAZs/dYK1O9JmNJxaJ1TeBtYfeYJ9rh8pMFasXYPLAnB8baklE"
+              }
+            }
+          ]
         }
       ],
       "DatabasesStaticDataObjects": null,
